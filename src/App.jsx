@@ -1,13 +1,22 @@
 import "./App.css";
-import SignupForm from "./components/SignUp";
+import { Routes, Route } from "react-router-dom";
 import React from "react";
+import Home from "./pages/Home";
+import Auth from "./pages/Auth";
+import Checkout from "./pages/Checkout";
+import Navbar from "./components/Navbar";
 
-const App = () => {
+function App() {
   return (
-    <div className="App">
-      <SignupForm />
+    <div className="app">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="auth" element={<Auth />} />
+        <Route path="checkout" element={<Checkout />} />
+      </Routes>
     </div>
   );
-};
+}
 
 export default App;
