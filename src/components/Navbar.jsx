@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaOpencart } from "react-icons/fa";
-
+import Auth from "../pages/Auth";
 export default function Navbar() {
   return (
     <nav className="navbar">
@@ -22,7 +22,7 @@ export default function Navbar() {
             <Link to="/auth" className="btn btn-secondary">
               Login
             </Link>
-            <Link to="auth" className="btn btn-primary">
+            <Link to="Auth" className="btn btn-primary">
               Signup
             </Link>
           </div>
